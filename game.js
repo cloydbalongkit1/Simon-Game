@@ -35,6 +35,7 @@ $(".btn").click(function(){
 function computerPattern () {
     userFollowedChoice = [];
     level++;
+    $("#level-title").text("Level: " + level);
     
     var randomPattern = Math.floor(Math.random() * 4);
     var randomChoice = buttonColors[randomPattern];
